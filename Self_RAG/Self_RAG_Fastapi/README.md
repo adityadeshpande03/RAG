@@ -1,7 +1,5 @@
 # 📄 Self-RAG : Based Question Answering API
 
-
-
 ---
 
 ## ✨ Features
@@ -19,8 +17,8 @@
 Follow these steps to set up the project locally:
 
 ```sh
-git clone https://github.com/yourusername/yourrepo.git
-cd yourrepo
+git clone https://github.com/adityadeshpande03/RAG/tree/main/Self_RAG/Self_RAG_Fastapi
+cd Self_RAG_Fastapi
 
 # Create a virtual environment
 python -m venv venv
@@ -28,6 +26,16 @@ source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 
 # Install dependencies
 pip install -r requirements.txt
+```
+
+---
+
+## ⚙️ Configuration
+
+Set up your environment variables:
+
+```sh
+export GROQ_API_KEY='your_groq_api_key'
 ```
 
 ---
@@ -97,5 +105,5 @@ We welcome contributions! To get started:
 
 ---
 
-Made with ❤️ by Adi | [GitHub Repository](https://github.com/yourusername/yourrepo)
+Made with ❤️ by Adi | [GitHub Repository](https://github.com/adityadeshpande03/RAG/tree/main/Self_RAG/Self_RAG_Fastapi)
 
