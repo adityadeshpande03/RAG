@@ -1,28 +1,24 @@
-RAG-Based Question Answering API
+# 📄 Self-RAG : Based Question Answering API
 
-This is a FastAPI-based RAG (Retrieval-Augmented Generation) application that allows users to ask questions based on retrieved data from URLs and uploaded files. The system uses Groq LLM and ChromaDB for document retrieval and embedding storage.
 
-Features
 
-Accepts user questions via API
+---
 
-Supports document retrieval from URLs and uploaded files (PDF, DOCX, TXT, JSON)
+## ✨ Features
 
-Uses ChromaDB as a vector store
+- Supports document retrieval from URLs and uploaded files (PDF, DOCX, TXT, JSON).
+- Uses ChromaDB as a vector store for efficient document searching.
+- Employs HuggingFace sentence embeddings for semantic similarity.
+- Integrates Groq API for intelligent summarization and query handling.
+- REST API interface built with FastAPI for easy integration.
 
-Employs HuggingFace sentence embeddings
+---
 
-Uses Groq's LLM for answer generation
+## 📦 Installation
 
-Installation
+Follow these steps to set up the project locally:
 
-Prerequisites
-
-Ensure you have Python 3.8+ installed.
-
-Setup
-
-# Clone the repository
+```sh
 git clone https://github.com/yourusername/yourrepo.git
 cd yourrepo
 
@@ -32,77 +28,74 @@ source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 
 # Install dependencies
 pip install -r requirements.txt
+```
 
-Configuration
+---
 
-Set up your environment variables:
+## 🚀 Running the Application
 
-export GROQ_API_KEY='your_groq_api_key'
-
-Running the Application
-
+```sh
 uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+```
 
-API Documentation
+---
 
-POST /ask_question
+## 📌 API Documentation
 
-Description: Allows users to ask a question based on documents from URLs or uploaded files.
+### `POST /ask_question`
 
-Request Body
+**Description:** Allows users to ask a question based on documents from URLs or uploaded files.
 
-Parameter
+#### Request Body
 
-Type
+| Parameter  | Type           | Required | Description                           |
+| ---------- | -------------- | -------- | ------------------------------------- |
+| `question` | `string`       | Yes      | The question to be asked              |
+| `urls`     | `list`         | No       | List of URLs to retrieve content from |
+| `files`    | `UploadFile[]` | No       | List of files to be uploaded          |
 
-Required
+#### Example Request
 
-Description
-
-question
-
-string
-
-Yes
-
-The question to be asked
-
-urls
-
-list
-
-No
-
-List of URLs to retrieve content from
-
-files
-
-UploadFile[]
-
-No
-
-List of files to be uploaded
-
-Example Request
-
+```sh
 curl -X 'POST' \
   'http://localhost:8000/ask_question' \
   -H 'Content-Type: multipart/form-data' \
   -F 'question="What is climate change?"' \
   -F 'urls=https://example.com/article' \
   -F 'files=@sample.pdf'
+```
 
-Example Response
+#### Example Response
 
+```json
 {
   "answer": "Climate change refers to long-term changes in temperature, precipitation, and other atmospheric conditions on Earth."
 }
+```
 
-Contributing
+---
 
-Feel free to submit pull requests or report issues.
+## 🛠️ Technologies Used
 
-License
+- **FastAPI**: Web framework for API development.
+- **ChromaDB**: Vector store for efficient document retrieval.
+- **HuggingFace Sentence Transformers**: Generates semantic embeddings for text.
+- **Groq**: Powers summarization and intelligent query responses.
+- **PyPDFLoader, Docx2txtLoader, JSONLoader**: File parsing tools for document processing.
 
-MIT License. See LICENSE file for details.
+---
+
+## 🤝 Contributing
+
+We welcome contributions! To get started:
+
+1. Fork this repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Commit your changes (`git commit -m 'Add some feature'`).
+4. Push to the branch (`git push origin feature-branch`).
+5. Open a pull request.
+
+---
+
+Made with ❤️ by Adi | [GitHub Repository](https://github.com/yourusername/yourrepo)
 
