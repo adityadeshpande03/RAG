@@ -1,4 +1,4 @@
-# 📄 Corrective-RAG: API-Based Question Answering System with Streamlit
+# 📄 Corrective-RAG: Question Answering System with Streamlit
 
 ---
 
