@@ -1,6 +1,5 @@
 # 📄 Self-RAG : Based Question Answering API
 
----
 
 ## ✨ Features
 
