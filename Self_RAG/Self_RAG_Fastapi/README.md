@@ -29,16 +29,6 @@ pip install -r requirements.txt
 
 ---
 
-## ⚙️ Configuration
-
-Set up your environment variables:
-
-```sh
-export GROQ_API_KEY='your_groq_api_key'
-```
-
----
-
 ## 🚀 Running the Application
 
 ```sh
