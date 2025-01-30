@@ -1,7 +1,3 @@
-Sure! Here's the updated `README.md` for a Streamlit-based version of your project:
-
----
-
 # 📄 Corrective-RAG: API-Based Question Answering System with Streamlit
 
 ---
