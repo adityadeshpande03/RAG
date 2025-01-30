@@ -1,18 +1,3 @@
-# requirements.txt
-"""
-fastapi==0.109.2
-uvicorn==0.27.1
-python-multipart==0.0.9
-langchain==0.1.9
-langchain-community==0.0.24
-langchain-core==0.1.27
-langchain-groq==0.0.6
-chromadb==0.4.24
-sentence-transformers==2.5.1
-python-docx==1.1.0
-tiktoken==0.6.0
-"""
-
 from fastapi import FastAPI, File, UploadFile, HTTPException, Form
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
