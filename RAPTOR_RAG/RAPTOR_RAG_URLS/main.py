@@ -1,22 +1,3 @@
-# requirements.txt
-"""
-fastapi
-uvicorn
-pydantic
-numpy
-pandas
-umap-learn
-beautifulsoup4
-scikit-learn
-tiktoken
-langchain
-langchain-community
-langchain-groq
-langchain-huggingface
-chromadb
-sentence-transformers
-"""
-
 # app.py
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, HttpUrl
