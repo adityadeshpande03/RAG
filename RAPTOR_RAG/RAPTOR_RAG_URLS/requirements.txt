@@ -1,0 +1,15 @@
+fastapi
+uvicorn
+pydantic
+numpy
+pandas
+umap-learn
+beautifulsoup4
+scikit-learn
+tiktoken
+langchain
+langchain-community
+langchain-groq
+langchain-huggingface
+chromadb
+sentence-transformers
