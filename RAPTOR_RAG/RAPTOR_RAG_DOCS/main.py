@@ -1,25 +1,3 @@
-# requirements.txt
-"""
-fastapi
-python-multipart
-uvicorn
-pydantic
-numpy
-pandas
-umap-learn
-beautifulsoup4
-scikit-learn
-tiktoken
-langchain
-langchain-community
-langchain-groq
-langchain-huggingface
-chromadb
-sentence-transformers
-python-docx
-pypdf
-"""
-
 # app.py
 from fastapi import FastAPI, HTTPException, UploadFile, File, Form
 from pydantic import BaseModel, HttpUrl
